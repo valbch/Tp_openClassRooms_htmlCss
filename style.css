@@ -201,25 +201,54 @@ aside p {
 
 /*Footer*/
 footer {
-  background-color: blue;
-  border: 4px blue solid;
   display: flex;
-  padding: 10px 30px 10px 30px;
+  background: url("ico_top.png") no-repeat top center,
+    url("separateur.png") repeat-x top, url("ombre.png") repeat-x top;
+  padding-top: 25px;
 }
 
+footer p,
+footer ul {
+  font-size: 0.8em;
+}
+
+footer h1 {
+  font-size: 1.1em;
+}
 #tweet {
-  background-color: red;
-  display: flex;
-  flex-direction: column;
+  width: 28%;
+  padding-left: 10px;
 }
 
 #mes_photos {
-  background-color: yellow;
-  display: flex;
-  flex-direction: row;
-
-  align-items: center;
+  width: 35%;
+  padding-left: 10px;
 }
+#mes_photos img {
+  border: 1px solid #181818;
+  margin-right: 2px;
+}
+
+/*case verte*/
 #mes_amis {
-  background-color: green;
+  width: 31%;
+}
+#titre_mes_amis {
+  padding-left: 10px;
+}
+
+#liste_de_mes_amis {
+  display: flex;
+  justify-content: space-between;
+}
+#mes_amis ul {
+  padding-left: 22px;
+}
+
+#mes_amis li {
+  list-style-image: url("ico_liensexterne.png");
+  padding-left: 0;
+}
+#mes_amis a {
+  color: #760001;
 }
