@@ -195,8 +195,8 @@ aside p {
 }
 #fleche_bulle {
   position: absolute;
-  top: 170px;
-  right: 260px;
+  top: 100px;
+  left: -12px;
 }
 
 /*Footer*/
@@ -251,4 +251,59 @@ footer h1 {
 }
 #mes_amis a {
   color: #760001;
+}
+
+/* Medias queries */
+
+/* si la largeur d'ecran ne dépasse pas 1024px alors : */
+@media all and (max-width: 1024px) {
+  #bloc_page {
+    width: auto;
+  }
+
+  nav {
+    width: auto;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    padding-left: 4px;
+  }
+  nav a {
+    font-size: 1.1em;
+  }
+  nav a:hover {
+    border-bottom: 0;
+  }
+
+  #banniere_image {
+    display: none;
+  }
+  section {
+    display: block;
+  }
+
+  article,
+  aside {
+    width: auto;
+    margin-bottom: 15px;
+    display: block;
+  }
+  #fleche_bulle {
+    display: none;
+  }
+  aside {
+    align-items: flex-start;
+  }
+
+  #photo_zozor img {
+    width: 110px;
+    float: right;
+    margin-left: 15px;
+  }
+  #image_reseau {
+    text-align: center;
+  }
 }
